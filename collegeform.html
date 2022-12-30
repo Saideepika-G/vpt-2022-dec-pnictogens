@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+    <link rel="stylesheet" href="admission.css">
+    <script defer src="admissionFormValidation.js"></script>
+</head>
+<body>
+     
+    <form action="/" method="get" id="Form">
+        <h2>College Admission Form</h2>  
+        <div id="secondhalf">
+            <div class="divcolor">
+                <h3>Applicant Details</h3>
+                <hr>
+                <div class="flex_container">
+                <div class="left">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="gender">Gender</label>
+                            <div id="rb">
+                                <input type="radio" id="M" value="male" name="gender" required>
+                                <label for="M">Male</label>
+                                <input type="radio" id="F" value="female" name="gender" required>
+                                <label for="F">Female</label>
+                                <input type="radio" id="O" value="others" name="gender" required>
+                                <label for="O">Others</label>
+                            </div>                    
+                        </div>
+                        <div>
+                            <label for="phno">Mobile number</label>
+                            <input type="text" id="phno" name="phno" required>
+                        </div>
+                        <div>
+                            <label for="10marks">Class X : marks (in %)</label>
+                            <input type="text" id="10marks" name="10name" required>
+                        </div>
+                        <div>
+                            <label for="12marks">Class XII : marks (in %)</label>
+                            <input type="text" id="12marks" name="12marks" required>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div>
+                            <label id="courselabel" for="course">Preffered Courese</label>
+                            <select id="course" names="course" required>
+                                <option disabled hidden selected>Choose a course</option>
+                                <option value="1">Information Technology</option>
+                                <option value="2">Computer Science</option>
+                                <option value="3">BSc Mathematics</option>
+                                <option value="4">MSc Data Science</option>
+                                                    
+                            </select>
+                        </div>
+                        <div>
+                            <label for="dob">Date Of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div>
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="10b">Class X:Board of study</label>
+                            <input type="text" id="10b" name="10b" required>
+                        </div>
+                        <div>
+                            <label for="12b">Class XII:Board of study</label>
+                            <input type="text" id="12b" name="12b" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divcolor">
+                <h3>Personal Details</h3>
+                <hr>
+                <div class="flex_container">
+                    <div class="left">
+                        <div>
+                            <label for="fname">Father's Name</label>
+                            <input type="text" id="fname" name="fname" required>
+                        </div>
+                        <div>
+                            <label for="mname">Mother's Name</label>
+                            <input type="text" id="mname" name="mname" required>
+                        </div>             
+                    </div>
+                    <div class="right">
+                        <div>
+                            <label for="sib" >Number of sublings</label>
+                            <input type="number" id="sib" name="sib" min="0" step="1" required>
+                        </div>
+                        <div id="addbar">
+                            <label for="address">Permanent address</label>
+                            <textarea id="address" name="address" placeholder="Enter your address here!" required></textarea>
+                        </div>                 
+                    </div>            
+                </div>
+            </div>
+            <div class="divcolor">
+                <h3>Proofs Submitted</h3>
+                <hr>
+                <div id="proof">
+                    <div>
+                        <label for="markproof">Proof of marks (%) attatched<i> (select if applicable)</i></label>
+                        <input type="checkbox" id="markproof" name="markproof" class="cb" required>
+                    </div>
+                    <div>
+                        <label for="bonofide">Address proof attatched<i> (select if applicable)</i></label>
+                        <input type="checkbox" id="bonofide" name="bonofide" class="cb" required>
+                    </div>          
+                </div>
+            </div>
+            
+            <br>
+            <div id="sub">
+                <input type="submit" id="button">
+            </div>  
+            <p>All fields are required *</p>
+        </div>               
+              
+    </form>
+</body>
+</html>

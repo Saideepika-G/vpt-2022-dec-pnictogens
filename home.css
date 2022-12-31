@@ -1,0 +1,263 @@
+body
+{
+    margin:0;
+    box-sizing: border-box;
+}
+
+nav
+{
+    background-color:#FFDEAD	;
+    margin: 0%;
+    height:50px;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#homelogo
+{
+    padding-right:15px;
+    width:25px;
+    height:25px;
+}
+
+#search_div
+{
+    background-image: url("images/library.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display:flex;
+    flex-direction: column;
+    /* background-color:blue; */
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    gap:5px;
+    margin-bottom: 2%;
+}
+
+#p1
+{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    padding:0.5%;
+    /* opacity: 0.6; */
+    border-radius: 5px;
+    color: white;
+    /* background-color: white; */
+}
+
+#div1
+{
+    display: flex;
+    align-items: center;
+    gap:2px;
+    width:100%;
+    justify-content: center;
+}
+
+#input
+{
+    width:25%;
+    height:35px;
+    border-radius: 5px;
+}
+
+#search_button
+{
+    background-image: url("images/search.png");
+    background-position-x:center ;
+    background-position-y: center ;
+    background-size:contain;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 5px;
+    padding: 1%;
+    height: 37px;
+    width:35px;
+}
+
+#content
+{
+    display:flex;
+    /* background-color: blueviolet; */
+    flex-wrap: wrap;
+    padding-bottom: 2%;
+
+}
+
+#highlight
+{
+    border-radius: 5px;
+    width:100%;
+    height: 350px;
+    background-image: url("images/image0.png");
+    background-size:100%;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+#prev,#next
+{
+   align-self: center;
+   width:25px;
+   height: 25px;
+   border: none;
+   border-radius: 5px;
+}
+
+#prev
+{
+    background-image: url("images/prev.png");
+    background-size: cover;
+}
+
+#next
+{
+    background-image: url("images/next.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+}
+
+#choose
+{
+    display: flex;
+    width:300px;
+    /* background-color: aqua; */
+}
+
+#one
+{
+    background-image:url("images/image1.png") ;
+}
+
+#two
+{
+    background-image:url("images/image2.png") ;
+}
+
+#three
+{
+    background-image:url("images/image3.png") ;
+}
+
+#four
+{
+    background-image:url("images/image4.png") ;
+}
+
+#five
+{
+    background-image:url("images/image5.png") ;
+}
+
+#six
+{
+    background-image:url("images/image6.png") ;
+}
+
+.first
+{
+    width:20%;
+    height: 170px;
+    background-color: aquamarine;
+    align-self: flex-start;
+    /* background-image: none; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.second
+{
+    width:30%;
+    height: 250px;
+    /* background-image: none; */
+    /* background-color: yellow; */
+    align-self: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.third
+{
+    width: 15%;
+    height: 150px;
+    /* background-color: rgb(120, 2, 116); */
+    align-self: flex-end;
+    background-image: none;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.column
+{
+    width: 40%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
+}
+
+.bottomdiv
+{
+    display:flex;
+    padding-top:2%;
+    width:100%;
+    justify-content:space-around;
+    flex-direction: column;
+    background-color:#FFDEAD;
+}
+
+.bottomdiv>div
+{
+    align-self: center;
+    width:80%;
+}
+
+@media (max-width: 1300px) {
+ 
+    #content
+    {
+        justify-content: center;
+        
+    }
+    div#choose {order:1;}
+    #choose
+    {
+        width:100%;
+        justify-content: center;
+    }
+    #highlight
+    {
+        width: 250px;
+    }
+    .column
+    {
+        width:50%;
+    }
+    #input
+    {
+        width:70%;
+    }
+  
+}
+
+@media (max-width :850px)
+{
+    .column
+    {
+        width:100%;
+    }
+    .column>div
+    {
+        align-self: center;
+        width: 120px;
+        height: 150px;
+    }
+
+}

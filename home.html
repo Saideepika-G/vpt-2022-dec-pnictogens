@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenLibrary</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="home.js"></script>
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <nav>
+        <a href="home.html" ><img id="homelogo" src="images\home.png"></a>
+    </nav>
+    <div id="search_div">
+        <p id="p1">BOOK - <i>A friend who will always accompany you!</i></p><br>
+        <div id="div1">
+            <input id="input" placeholder="Search..">
+            <button id="search_button" onclick="getbooks()"></button> 
+        </div>
+        
+    </div>
+    <div id="content">
+        <div class="column">
+            <div class="first" id="one"></div>
+            <div class="second" id="two"></div>
+            <div class="third" id="three"></div>
+        </div>        
+        <div id="choose">
+            <button id="prev" onclick="prev()"></button>
+            <div id="highlight"></div>
+            <button id="next" onclick="next()"></button>
+        </div>
+        <div class="column">
+            <div class="first" id="four"></div>
+            <div class="second" id="five"></div>
+            <div class="third" id="six"></div>
+        </div>       
+    </div>
+     <div class="ring" style="display: none;">Loading
+        <span></span>
+     </div>
+     <div class="bottomdiv">
+        <div id="output">
+        </div>
+        <div id="book_details"></div>
+     </div>
+     
+</body>
+</html>

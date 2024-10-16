@@ -20,7 +20,7 @@ The application comprises of:-
     -> A search bar that connects with https://openlibrary.org/ in order to provide search results of given query (User can search for a book  using book title, author name, edition number, published year, ISBN number)
     -> Book description of the search results (clicking on this will provide the user with description about the book if it is available from the interface) (example for a book that has description available - "C# programming" by "Kevin Hoffman")
     -> Hyperlink that redirects the user to the page of the corresp onding book in the OpenLibrary website from which the user can enjoy the book
-    
+
 ## Authors
 
 - [@SaiDeepika](https://www.github.com/Saideepika-G)
@@ -28,3 +28,5 @@ The application comprises of:-
 - [@Harish](https://www.github.com/Harish-S-N)
 - [@Raghan Harkesh](https://www.github.com/raghanharkesh)
 - [@Thamaraiselvan](https://www.github.com/thamaraiselvanm143)
+
+
